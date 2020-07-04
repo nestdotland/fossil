@@ -4,16 +4,16 @@
     <img src="../assets/logo_light.png" alt="nest.land logo (light version)" width="110">
   </a>
 
-  <h3 align="center">nest.land</h3>
+  <h3 align="center">fossil</h3>
 
   <p align="center">
-    A module registry for Deno, on the blockchain
+    An automatic registry archiving system on Arweave
  </p>
 </p>
 
-## nest.land template
+## fossil
 
-A template for nest.land repositories. Remove this sentence and change this header to describe the project this template is being used for.
+An automatic registry archiving system powered by the Arweave Blockchain. This way, if our registry goes down or is compromised, nest.land can provide a permanent and immutable backup.
 
 ## What is nest.land?
 
