@@ -13,5 +13,8 @@
     "eslint": "^7.3.1",
     "eslint-config-bamboo": "^3.0.0",
     "eslint-config-prettier": "^6.11.0"
+  },
+  "dependencies": {
+    "arweave": "^1.7.1"
   }
 }
