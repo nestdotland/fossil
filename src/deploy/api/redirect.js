@@ -1,10 +1,9 @@
-const request = require("request");
 const Arweave = require('arweave/node');
 const arweave = Arweave.init();
 
-module.exports = (req, res) => {
-    console.log(req);
-    const transactions = arweave.arql({
+module.exports = async (req, res) => {
+    console.log("HERE");
+    const transactions = await arweave.arql({
         op: 'and',
         expr1: {
             op: 'equals',
