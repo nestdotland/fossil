@@ -4,7 +4,7 @@ const arweave = Arweave.init();
 
 module.exports = (req, res) => {
     console.log(req);
-    const transactions = await arweave.arql({
+    const transactions = arweave.arql({
         op: 'and',
         expr1: {
             op: 'equals',
