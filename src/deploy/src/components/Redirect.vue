@@ -32,16 +32,38 @@ export default {
       },
       expr2: {
         op: "equals",
-        expr1: "from",
-        expr2: "tySYSW93nDky1sbCO56PmyEyspbyYx7x9ZXMNueKOOg",
+        expr1: "App-Name",
+        expr2: "land.nest.fossil",
       },
     });
     const latest = transactions[0];
-    this.msg = latest;
-    window.location.href = `https://arweave.net/tx/${latest}`;
+    if (latest === null || latest === undefined) {
+      this.msg = "Unable to find an archive";
+    } else {
+      this.msg = latest;
+      window.location.href = `https://arweave.net/tx/${latest}`;
+    }
   },
 };
 </script>
 
-<style scoped>
+<style lang="scss">
+// Colors
+$bg-color: rgb(255, 255, 255);
+$dot-color: #22c1c3;
+// Dimensions
+$dot-size: 2px;
+$dot-space: 60px;
+
+body {
+  background: linear-gradient(
+        90deg,
+        $bg-color ($dot-space - $dot-size),
+        transparent 1%
+      )
+      center,
+    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+    $dot-color;
+  background-size: $dot-space $dot-space;
+}
 </style>
