@@ -9,7 +9,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "arweave": "^1.7.1",
     "core-js": "^3.6.5",
+    "sass": "^1.26.9",
+    "sass-loader": "^9.0.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {
