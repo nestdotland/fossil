@@ -26,6 +26,10 @@ $cyan: #22c1c3;
             box-shadow: none;
         }
 
+        .icon {
+            color: $sub-heading !important;
+        }
+
         ::placeholder {
             color: $sub-heading;
         }
@@ -41,5 +45,38 @@ $cyan: #22c1c3;
         font-weight: bold;
         line-height: 77px;
         text-transform: uppercase;
+    }
+
+    &.card {
+        background-color: $dp2;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+        margin: 15px;
+
+        .card-content {
+            padding: 30px;
+        }
+
+        .card-icon {
+            height: 50px;
+            font-size: 50px;
+            color: white;
+            position: relative;
+            margin-bottom: 30px;
+
+            svg {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+
+        .title.is-5 {
+            margin-bottom: 35px;
+            font-weight: 500;
+        }
+
+        .subtitle.is-6 {
+            font-size: 15px;
+        }
     }
 }
