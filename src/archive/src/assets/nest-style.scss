@@ -1,0 +1,45 @@
+$dp0: #262835;
+$dp1: #333647;
+$dp2: #3e4357;
+$text: #f2f3f6;
+$sub-heading: #adb1bc;
+$heading: #ffffff;
+$yellow: #fdbb2d;
+$cyan: #22c1c3;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+.nest {
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &.search-bar {
+        width: 70%;
+        min-width: 300px;
+        margin: auto;
+
+        .input {
+            background-color: $dp2;
+            color: $text;
+            border: none;
+            box-shadow: none;
+        }
+
+        ::placeholder {
+            color: $sub-heading;
+        }
+    }
+
+    &.hero.is-dark {
+        background-color: $dp0 !important;
+    }
+
+    &.title.is-1 {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 77px;
+        text-transform: uppercase;
+    }
+}
