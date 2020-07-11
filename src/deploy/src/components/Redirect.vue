@@ -52,18 +52,19 @@ export default {
 $bg-color: rgb(255, 255, 255);
 $dot-color: #22c1c3;
 // Dimensions
-$dot-size: 2px;
-$dot-space: 60px;
+$bg-size: 100px;
+$dot-size: 1%; // with respect to $bg-size (can use absolute values)
+$dot1: 25px; // should be 25% of $bg-size
+$dot2: 75px; // should be 75% of $bg-size
 
 body {
-  background: linear-gradient(
-        90deg,
-        $bg-color ($dot-space - $dot-size),
-        transparent 1%
-      )
-      center,
-    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
-    $dot-color;
-  background-size: $dot-space $dot-space;
+  background: $bg-color;
+  background-image: radial-gradient(
+      circle at $dot1 $dot1,
+      $dot-color $dot-size,
+      transparent 0%
+    ),
+    radial-gradient(circle at $dot2 $dot2, $dot-color $dot-size, transparent 0%);
+  background-size: $bg-size $bg-size;
 }
 </style>
