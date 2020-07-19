@@ -87,4 +87,16 @@ $cyan: #22c1c3;
             font-size: 15px;
         }
     }
+
+    &.footer {
+        padding: 3rem 1.5rem;
+
+        a {
+            color: $cyan;
+
+            &:hover {
+                color: $cyan;
+            }
+        }
+    }
 }
