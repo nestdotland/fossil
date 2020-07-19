@@ -50,7 +50,15 @@ $cyan: #22c1c3;
     &.card {
         background-color: $dp2;
         box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+        transition: transform .15s, box-shadow .15s;
         margin: 15px;
+
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.25);
+            transition: transform .15s, box-shadow .15s;
+            cursor: pointer;
+        }
 
         .card-content {
             padding: 30px;
