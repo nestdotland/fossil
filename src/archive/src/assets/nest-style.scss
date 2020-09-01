@@ -1,0 +1,102 @@
+$dp0: #262835;
+$dp1: #333647;
+$dp2: #3e4357;
+$text: #f2f3f6;
+$sub-heading: #adb1bc;
+$heading: #ffffff;
+$yellow: #fdbb2d;
+$cyan: #22c1c3;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+.nest {
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &.search-bar {
+        width: 50%;
+        min-width: 300px;
+        margin: auto;
+
+        .input {
+            background-color: $dp2;
+            color: $text;
+            border: none;
+            box-shadow: none;
+        }
+
+        .icon {
+            color: $sub-heading !important;
+        }
+
+        ::placeholder {
+            color: $sub-heading;
+        }
+    }
+
+    &.hero.is-dark {
+        background-color: $dp0 !important;
+    }
+
+    &.title.is-1 {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 77px;
+        text-transform: uppercase;
+    }
+
+    &.card {
+        background-color: $dp2;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+        transition: transform .15s, box-shadow .15s;
+        margin: 15px;
+
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.25);
+            transition: transform .15s, box-shadow .15s;
+            cursor: pointer;
+        }
+
+        .card-content {
+            padding: 30px;
+        }
+
+        .card-icon {
+            height: 50px;
+            font-size: 50px;
+            color: white;
+            position: relative;
+            margin-bottom: 30px;
+
+            svg {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+
+        .title.is-5 {
+            margin-bottom: 35px;
+            font-weight: 500;
+        }
+
+        .subtitle.is-6 {
+            font-size: 15px;
+        }
+    }
+
+    &.footer {
+        padding: 3rem 1.5rem;
+
+        a {
+            color: $cyan;
+
+            &:hover {
+                color: $cyan;
+            }
+        }
+    }
+}
