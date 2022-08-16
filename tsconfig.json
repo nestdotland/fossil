@@ -9,7 +9,9 @@
     "esModuleInterop": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": ["esnext"],
+    "lib": [
+      "esnext"
+    ],
     "module": "commonjs",
     "moduleResolution": "node",
     "noEmitOnError": true,
